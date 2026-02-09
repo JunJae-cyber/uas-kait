@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="home.css">
+    <style>
+        *{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html{
+    scroll-behavior: smooth;
+    font-size: 16px;
+}
+
+body{
+    background-image: url(/images/2.png);
+    width: 100%;
+    background-color: #faf9f6;
+    color: #faf9f6;
+    min-height: 100vh;
+    animation: fadein 0.7s ease-in-out;
+}
+
+
+@keyframes fadein {
+    from{
+        opacity: 0;
+        transform: translateY(10px);
+    }
+    to{
+        opacity: 1;
+        transform: translateY(0);
+    }
+  
+}
+
+/* HEADER */
+header{
+    display: flex;
+    align-items: center;
+    padding: 15px;
+    color: #faf9f6;
+    font-size: 20px;
+    justify-content: space-between;
+}
+
+.navbar ul{
+    display: flex;
+    gap: 100px;  
+    list-style: none;
+}
+
+.navbar ul a{
+    cursor: pointer;
+    display: inline-block;
+    padding: 5px 10px;
+    color: #faf9f6;
+    text-decoration: none;
+    border-radius: 4px;
+    transition: all 0.2s ease-out;
+}
+
+.navbar ul a:hover{
+    padding: 5px 10px;
+    background: rgba(0,0,0,0.7);
+    color: #faf9f6;
+    border-radius: 4px;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);  
+}
+
+.navbar ul a:active{
+    transform: translateY(0);
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    background-color: rgba(225,225,225,0.1);
+}
+
+
+/* Section */
+.hero{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    
+    min-height: 80vh;
+    width: 100%; 
+}
+
+.hero h1{
+    font-size: 3rem;
+    text-shadow: 2px 2px 8px rgba(0,0,0,0.7);
+    text-transform: uppercase;
+    animation: fadelnUp 1.2s ease-out;
+}
+
+
+@keyframes fadelnUp {
+    from{
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    to{
+        opacity: 1;
+        transform: translateY(0);
+    }
+  
+}
+
+
+/* Footer */
+footer{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 50px;
+    
+}
+
+footer .footer-content{
+   
+    letter-spacing: 1px;
+    padding: 25px;
+    background: rgba(0,0,0,0.7);
+    text-align: center;
+    text-shadow: 2px 2px 8px rgba(0,0,0,0.7);
+    text-transform: uppercase;
+    border-radius: 16px;
+   
+}
+
+
+    </style>
+</head>
+<body>
+    <header>
+        <div class="judul">
+            <h2>kelompok 5</h2>
+        </div>
+
+        <div class="navbar">
+            <ul>
+                <li><a href="index.html">home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html">contact</a></li>
+                <li><a href="">gallery</a></li>
+            </ul>
+        </div>
+
+        <div class="judul2">
+            <h2>Berita</h2>
+        </div>
+    </header>
+
+    <article>
+        <section class="hero">
+            <h1>TANAH LONGSOR <br>CISARUA <br>BANDUNG BARAT</h1>
+        
+        </section>
+    </article>
+
+
+    <footer>
+        <div class="footer-content">
+            <h2>&copy; 2026 UAS KOMPUTASI APLIKASI ILMU TEKNOLOGI</h2>
+            <P>Kelompok 5: Gualmin Halim, Ravina Maryam, Nizar Gislami, Muhamad Abdillah</P>
+        </div>
+    </footer>   
+</body>
+</html>
