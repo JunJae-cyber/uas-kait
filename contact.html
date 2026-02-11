@@ -112,7 +112,7 @@ header{
     line-height: 1.6;
 }
 
-.form-box input,.form-box textarea{
+.form-box input,.form-box textarea, .form-box select{
     width: 100%;
     margin: 8px 0;
     padding: 10px;
@@ -177,6 +177,12 @@ th{
   font-size: 14px;
   opacity: 0.8;
 }
+.tujuan-text {
+    text-align: justify; 
+    font-size: 14px;    
+    line-height: 1.5;    
+    margin-top: 10px;   
+}
 
 </style>
 
@@ -188,17 +194,16 @@ th{
         </div>
 
         <div class="navbar">
-            <ul>
-                <li><a href="index.html">home</a></li>
-                <li><a href="about.html">About</a></li>
-                <li><a href="contact.html">contact</a></li>
-                <li><a href="">gallery</a></li>
-            </ul>
-        </div>
+        <ul>
+          <li><a href="index.html">home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="contact.html">contact</a></li>
+        </ul>
+      </div>
 
-        <div class="judul2">
-            <h2>Berita</h2>
-        </div>
+      <div class="judul2">
+        <h2><li><a href="berita.html">berita</a></li></h2>
+      </div>
     </header>
 
     <section class="contact-section">
@@ -213,7 +218,7 @@ th{
                 <p><b>Telepon</b>:</b><br>08888</p>
                 <hr>
                 <h3>Tujuan Website</h3>
-                <p>Lorem ipsum, dolor sit amet consectetur <br>adipisicing elit. Enim tenetur libero assumenda maxime sunt mollitia. Vitae quos,<br> velit repellat eum pariatur sed obcaecati, hic est repudiandae dolorum odit <br>facilis. Natus.</p>
+                <p class="tujuan-text">Website ini dikembangkan untuk memenuhi tugas UAS Komputer Aplikasi IT dengan fokus pada penyajian berita terkini. Tujuan kami adalah menyediakan platform informasi yang cepat, akurat, dan transparan, terutama dalam menyampaikan berita-berita krusial yang membutuhkan perhatian publik segera</p>
 
             </article>
 
@@ -222,13 +227,20 @@ th{
 
                 <form action="">
 
-                    <input type="text" placeholder="Nama" required>
+                    <input type="text" placeholder="Nama" maxlength="30" required>
 
-                    <input type="text" placeholder="Email" required>
+                    <input type="text" placeholder="Email" maxlength="30" required>
 
                     <textarea type="text" placeholder="Pesan" rows="4" required></textarea>
 
-                    <button type="submit">Kirim</button>
+                    <select required>
+                        <option value="" disabled selected>--Pilih Topik--</option>
+                        <option value="kritik">Kritik</option>
+                        <option value="saran">Saran</option>
+                        <option value="pertanyaan">Pertanyaan</option>
+                    </select>
+
+                    <button onclick="alert('Pesan anda sudah di kirim');">Kirim</button>
                     
                 </form>
             </article>
@@ -236,47 +248,23 @@ th{
             <article class="table-box">
                 <h2>Data kelompok</h2>
 
-                <table>
-                    <tr>
-                        <th>No</th>
-                        <th>Nama</th>
-                        <th>Nim</th>
-                        <th>Prodi</th>
-                        <th>Instagram</th>
-                        <th>WA</th>
-                    </tr>
-                    <tr>
-                        <td>1</td>
-                        <td>Gulamin Halim</td>
-                        <td>105250001</td>
-                        <td>Informatika</td>
-                        <td>@</td>
-                        <td>0</td>
-                    </tr>
-                    <tr>
-                        <td>2</td>
-                        <td>Ravina Maryam</td>
-                        <td>105250030</td>
-                        <td>Informatika</td>
-                        <td>@</td>
-                        <td>0</td>
-                    </tr>
-                    <tr>
-                        <td>3</td>
-                        <td>Nizar Gislami</td>
-                        <td>105250001</td>
-                        <td>Informatika</td>
-                        <td>@</td>
-                        <td>0</td>
-                    </tr>
-                     <tr>
-                        <td>4</td>
-                        <td>Muhamad Abdillah</td>
-                        <td>105250010</td>
-                        <td>Informatika</td>
-                        <td>@ibmhxa</td>
-                        <td>0881-5893-150</td>
-                    </tr>
+                <ul>
+                    <li>Gulamin Halim</li>
+                    <li>Muhammad Abdillah</li>
+                    <li>Nizar Gislami</li>
+                    <li>Ravina Maryam</li>
+                </ul>
+                <br>
+
+                 <h2>Data kelompok </h2>
+
+                <ol>
+                    <li>Gulamin Halim</li>
+                    <li>Muhammad Abdillah</li>
+                    <li>Nizar Gislami</li>
+                    <li>Ravina Maryam</li>
+                </ol>
+                        
 
                     
                 </table>
